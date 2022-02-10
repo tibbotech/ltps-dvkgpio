@@ -1,10 +1,10 @@
 TO = $(PREFIX)/home/root/dvkgpio/
 
 all:
-	$(CC) $(CFLAGS) $(LDLAGS) -pg -o test_gpio dvc_gpio.c test_gpio.c
-	$(CC) $(CFLAGS) $(LDLAGS) -pg -o lsgpio lsgpio.c
-	$(CC) $(CFLAGS) $(LDLAGS) -pg -o gpio-hammer gpio-utils.c gpio-hammer.c
-	$(CC) $(CFLAGS) $(LDLAGS) -pg -o gpio-event-mon gpio-event-mon.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -pg -o test_gpio dvc_gpio.c test_gpio.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -pg -o lsgpio lsgpio.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -pg -o gpio-hammer gpio-utils.c gpio-hammer.c
+	$(CC) $(CFLAGS) $(LDFLAGS) -pg -o gpio-event-mon gpio-event-mon.c
 
 clean:
 	rm -f test_gpio
